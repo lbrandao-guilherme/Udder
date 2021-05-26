@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "âPngtreeâcute cow cartoon illustration_5354746.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "âPngtreeâcute cow cartoon illustration_5354746@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "âPngtreeâcute cow cartoon illustration_5354746@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
