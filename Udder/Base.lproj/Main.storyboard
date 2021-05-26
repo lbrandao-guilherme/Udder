@@ -16,27 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Udder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-cn-Btp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Udder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-cn-Btp">
                                 <rect key="frame" x="156" y="79" width="102" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="40"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh Milk, On Demand! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCw-TB-VaE">
-                                <rect key="frame" x="98" y="135" width="223" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh Milk, On Demand! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCw-TB-VaE">
+                                <rect key="frame" x="97.5" y="135" width="223" height="27"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="âPngtreeâsplash milk on transparent background_4355423" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-68-LYJ">
-                                <rect key="frame" x="0.0" y="458" width="412" height="361"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="âPngtreeâsplash milk on transparent background_4355423" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-68-LYJ">
+                                <rect key="frame" x="26" y="192" width="362" height="327"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="327" id="Xzl-wg-sJg"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJr-pJ-y3L">
+                                <rect key="frame" x="162" y="619" width="90" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BOS-wg-K58"/>
+                                    <constraint firstAttribute="width" constant="90" id="yMo-Ay-AmQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <state key="normal" title="Order">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6sr-cn-Btp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="6u7-at-nRD"/>
+                            <constraint firstItem="MJr-pJ-y3L" firstAttribute="top" secondItem="B0A-68-LYJ" secondAttribute="bottom" constant="100" id="GCr-Hg-eVr"/>
+                            <constraint firstItem="6sr-cn-Btp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWY-26-SmF"/>
+                            <constraint firstItem="B0A-68-LYJ" firstAttribute="top" secondItem="tCw-TB-VaE" secondAttribute="bottom" constant="30" id="aTd-ni-Jrf"/>
+                            <constraint firstItem="tCw-TB-VaE" firstAttribute="top" secondItem="6sr-cn-Btp" secondAttribute="bottom" constant="8" symbolic="YES" id="jdY-w8-QPO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B0A-68-LYJ" secondAttribute="trailing" constant="26" id="l7e-8Z-FzG"/>
+                            <constraint firstItem="MJr-pJ-y3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oN4-h6-d4V"/>
+                            <constraint firstItem="B0A-68-LYJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="pug-sY-cet"/>
+                            <constraint firstItem="tCw-TB-VaE" firstAttribute="centerX" secondItem="6sr-cn-Btp" secondAttribute="centerX" constant="2" id="rlY-9D-5yo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -51,6 +79,12 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
